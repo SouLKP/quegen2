@@ -22,6 +22,7 @@ from langchain.memory import ConversationBufferMemory
 
 import streamlit as st
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+MODEl = st.secrets["MODEl"]
 
 # Define ConversationBufferMemory
 memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
