@@ -17,8 +17,11 @@ from langchain.memory import ConversationBufferMemory
 # MODEL = os.getenv("MODEL")
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
-llm = OpenAI(temperature=0)
+# OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
+# llm = OpenAI(temperature=0)
+
+import streamlit as st
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 # Define ConversationBufferMemory
 memory = ConversationBufferMemory(memory_key='chat_history', return_messages=True)
