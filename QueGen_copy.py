@@ -1,5 +1,4 @@
 import streamlit as st
-from jemo import *  
 
 if 'my_dict' not in st.session_state:
     st.session_state.my_dict = {}
@@ -65,8 +64,8 @@ if st.session_state.my_dict:
 if st.session_state.my_dict:
     op = st.button("Generate question paper",type='primary',key='dif2')
     if op: 
-        input_dict = st.session_state.my_dict
-        question_paper_result = generate_questions(input_dict)
+        input_dict = st.session_state.my_dict 
+        question_paper_result = "done, it's working"
         st.write("Generate Question Paper")
         st.write(question_paper_result)
         if st.download_button("Download as Text File",data=question_paper_result,type='primary',key='non'): 
