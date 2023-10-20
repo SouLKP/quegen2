@@ -13,9 +13,11 @@ from langchain.chains import RetrievalQA
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 
-load_dotenv()
-MODEL = os.getenv("MODEL")
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# load_dotenv()
+# MODEL = os.getenv("MODEL")
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+
+OPENAI_API_KEY = OPENAI_API_KEY
 llm = OpenAI(temperature=0)
 
 # Define ConversationBufferMemory
