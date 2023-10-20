@@ -21,7 +21,7 @@ from langchain.memory import ConversationBufferMemory
 # llm = OpenAI(temperature=0)
 
 import streamlit as st
-OPENAI_API_KEY = st.Secrets["OPENAI_API_KEY"]
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 print(OPENAI_API_KEY)
 MODEL="gpt-3.5-turbo"
 
