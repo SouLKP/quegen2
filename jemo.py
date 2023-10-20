@@ -17,7 +17,7 @@ from langchain.memory import ConversationBufferMemory
 # MODEL = os.getenv("MODEL")
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-OPENAI_API_KEY = os.environ('OPENAI_API_KEY')
+OPENAI_API_KEY = os.environ['OPENAI_API_KEY']
 llm = OpenAI(temperature=0)
 
 # Define ConversationBufferMemory
