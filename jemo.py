@@ -22,6 +22,7 @@ from langchain.memory import ConversationBufferMemory
 
 import streamlit as st
 OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
+print(OPENAI_API_KEY)
 MODEL="gpt-3.5-turbo"
 
 # Define ConversationBufferMemory
