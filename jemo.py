@@ -117,7 +117,7 @@ def generate_questions(input_dict):
     # The questions should demonstrate understanding of key concepts from the book content. Format the full question paper clearly labeling the sections and numbering the questions sequentially.
     # '''
 
-    llm = ChatOpenAI(model_name=MODEL, temperature=0.4, openai_api_key=OPENAI_API_KEY)
+    llm = ChatOpenAI(model_name=MODEL, temperature=0.4)
     chain = RetrievalQA.from_llm(
             llm=llm,
             retriever=book_content_vectorstore.as_retriever(),
